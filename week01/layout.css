@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color palette for the basic-layout */
+:root {
+    --background-color:  lightgray;
+    --aside-color: #f4f4f4;
+    --nav-color: black;
+    --header-bg-color: #333;
+    --text-color: #333;
+}
+
+/* body styles */
+body {
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
+                         "main main main aside"
+                         "footer footer footer footer";
+    grid-template-rows: 100px 50px 350px 150px;
+    
+}
+
+/* header styles */
+header {
+    background-color: var(--header-bg-color);
+    color: white;
+    grid-area: header;
+    grid-template-columns: 100%;
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--nav-color);
+    color: white;
+    grid-area: nav;
+    grid-template-columns: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    grid-area: main;
+    padding: 20px;
+    
+}
+
+aside {
+    background-color: var(--aside-color);
+    color: var(--text-color);
+    grid-area: aside;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--header-bg-color);
+    color: white;
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
