@@ -8,77 +8,55 @@
 :root {
     --background-color:  lightgray;
     --aside-color: #f4f4f4;
-    --nav-color: black;
+    --nav-bg-color: black;
     --header-bg-color: #333;
     --text-color: #333;
 }
 
-/* body styles */
 body {
-    display: grid;
     font-family: 'Times New Roman', Times, serif;
-    grid-template-areas: "header header header header"
-                         "nav nav nav nav"
-                         "main main main aside"
-                         "footer footer footer footer";
-    grid-template-rows: 100px 50px 350px 150px;
-    
+    display: grid;
+    grid-template-areas: "header header header nav"
+                          "main main main aside"
+                           "footer footer footer";
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-rows: auto 400px 200px;
 }
 
-/* header styles */
 header {
     background-color: var(--header-bg-color);
-    color: white;
-    grid-area: header;
-    grid-template-columns: 100%;
+    grid-column: 1/10;
+    color: #f4f4f4;
+}
+h1 {
     padding: 20px;
 }
-
-nav {
-    background-color: var(--nav-color);
-    color: white;
-    grid-area: nav;
-    grid-template-columns: 100%;
+main {
+    background-color: var(--background-color);
+    grid-column: 1/9;
+    padding: 10px;
 }
-
-nav ul {
+nav ul{
     display: flex;
+    background-color: black;
+    padding: 20px;
     justify-content: space-evenly;
 }
 nav li {
     list-style-type: none;
 }
 nav a {
-    text-decoration: none;
     color: white;
-    padding: 10px 20px;
-    display: block;
-    transition: background-color 0.3s ease;
     font-size: 18px;
+    text-decoration: none;
 }
-
-main {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    grid-area: main;
-    padding: 20px;
-    
-}
-
 aside {
     background-color: var(--aside-color);
-    color: var(--text-color);
-    grid-area: aside;
-    padding: 20px;
+    padding: 10px;
 }
-
 footer {
     background-color: var(--header-bg-color);
-    color: white;
-    grid-area: footer;
-    padding: 20px;
-    text-align: center;
+    grid-column: 1/10;
+    color: #f4f4f4;
+    padding: 10px;
 }
-
-
-
