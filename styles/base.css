@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color palette for the basic-layout */
+:root {
+    --background-color: lightgray;
+    --aside-color: #f4f4f4;
+    --nav-bg-color: black;
+    --header-bg-color: #333;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+}
+
+nav ul {
+    background-color: var(--nav-bg-color);
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+nav li {
+    list-style-type: none;
+    
+}
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: 900px auto;
+    margin: 10px;
+    gap: 20px;
+
+}
+
+.card {
+    border: 1px solid black;
+}
+
+
+
+.photo {
+    float: right;
+}
