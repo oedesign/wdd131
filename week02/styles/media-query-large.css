@@ -1,0 +1,14 @@
+* { padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+
+@media screen and (min-width: 500px) {
+    header {
+        background-color: black;
+        color: aliceblue;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
