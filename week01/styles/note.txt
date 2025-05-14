@@ -1,1 +1,4 @@
 grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+
+
+explain what this code line does in a comment
