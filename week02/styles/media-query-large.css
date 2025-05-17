@@ -3,6 +3,11 @@
     box-sizing: border-box; 
 }
 
+/* CSS media query general syntax */
+@media screen and (expressions) {
+    /* CSS rules */
+}
+
 @media screen and (min-width: 500px) {
     header {
         background-color: black;
