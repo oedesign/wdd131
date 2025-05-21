@@ -20,7 +20,7 @@ body {
                           "main main main aside"
                            "footer footer footer";
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-    grid-template-rows: auto 400px 200px;
+    grid-template-rows: auto 400px 120px;
 }
 
 header {

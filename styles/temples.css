@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header styling */
+header {
+    background-color: purple;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    position: relative;
+}
+
+/* harmburger styling */
+#harmburger {
+    display: block;
+    position: absolute;
+    top: 0.2em;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+#harmburger:hover {
+    cursor: pointer;
+}
+
+/* navigation menu */
+#navigation {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    /* background-color: #333; */
+}
+
+#navigation li {
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem;
+    /* border: 1px solid white; */
+}
+
+#navigation a {
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid white; */
+    font-size: 1.2rem;
+}
+
+#navigation li:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+/* show navigation with js */
+
+#navigation.show {
+    display: flex;
+    flex-direction: column;
+}
+
