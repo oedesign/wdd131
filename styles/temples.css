@@ -51,10 +51,16 @@ header {
     font-size: 1.2rem;
 }
 
-#navigation li:hover {
+nav a:hover {
     background-color: darkmagenta;
     color: white;
 }
+
+nav li:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
 
 /* show navigation with js */
 
