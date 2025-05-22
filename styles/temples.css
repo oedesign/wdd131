@@ -17,7 +17,7 @@ header {
 #harmburger {
     display: block;
     position: absolute;
-    top: 0.2em;
+    top: 1rem;
     right: 1rem;
     background: none;
     border: none;
