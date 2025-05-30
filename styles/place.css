@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+
+:root {
+    --background-color: #f4f4f4;
+    --header-bg-color: #ff0000;
+    --header-text-color: #fff;
+    --text-color: #333;
+}
+
+/* styling header */
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 10px;
+}
+
+/* styling main */
+.hero-image {
+    display: grid;
+    place-items: center;
+    background-image: url('../images/photo.webp');
+    width: 100%;
+    min-height: 300px;
+    height: 70vw;
+    max-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    margin: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    /* border: 1px solid black; */
+    max-width: 380px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.icon img {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
