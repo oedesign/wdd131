@@ -37,6 +37,11 @@ header {
     line-height: 35px;
 }
 
+.res-img {
+    width: 100%;
+    height: 600px;
+}
+
 #lastmodified {
     color: yellow;
 }
