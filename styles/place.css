@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 :root {
@@ -23,44 +23,21 @@ header {
     padding: 10px;
 }
 
-/* styling main */
-.hero-image {
-    display: grid;
-    place-items: center;
-    background-image: url('../images/photo.webp');
-    width: 100%;
-    min-height: 300px;
-    height: 70vw;
-    max-height: 500px;
-    background-size: cover;
-    background-position: center;
-}
-
-h2 {
-    margin: 20px;
-}
-
-span {
-    font-weight: bold;
-}
-
-ul li {
-    list-style: none;
-    margin: 10px 0;
-}
+/* main */
 
 .information {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid var(--text-color); */
     max-width: 380px;
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
+    gap: 30px;
+    line-height: 35px;
 }
 
-.icon img {
-    margin-bottom: 20px;
+#lastmodified {
+    color: yellow;
 }
 
 footer {
@@ -68,5 +45,5 @@ footer {
     color: var(--header-text-color);
     text-align: center;
     padding: 10px;
-    position: relative;
+    margin-top: 10px;
 }
