@@ -43,16 +43,16 @@
             <div class="icon">
                 <img src="images/weather-icon.svg" alt="Weather Icon" width="40">
             </div>
-            <div class="info"><span class="label">Temperature:</span><span class="value"> 26°C</span></div>
-            <div class="info"><span class="label">Conditions:</span><span class="value"> Partly Cloudy</span></div>
-            <div class="info"><span class="label">Wind:</span><span class="value"> 18 km/h NE</span></div>
-            <div class="info"><span class="label">Wind Chill:</span><span class="value"> 25°C</span></div>
+            <div class="info"><span class="label">Temperature:</span><span class="value" id="temp">26°C</span></div>
+            <div class="info"><span class="label">Conditions:</span><span class="value">Partly Cloudy</span></div>
+            <div class="info"><span class="label">Wind:</span><span class="value" id="wind">18 km/h NE</span></div>
+            <div class="info"><span class="label">Wind Chill:</span><span class="value" id="windChill">N/A</span></div>
         </section>
     </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear">2025</span> Oluwaseyi Elujoba | OE Design | Lagos, Nigeria</p>
-        <p id="lastmodified">Last Modification: 5/10/2025 3:30pm</p>
+        <p>&copy; <span id="currentyear"></span> Oluwaseyi Elujoba | OE Design | Lagos, Nigeria</p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
     </footer>
     <script src="scripts/place.js" defer></script>
 </body>
