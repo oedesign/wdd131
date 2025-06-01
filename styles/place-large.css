@@ -27,7 +27,7 @@
       #weather h2::after {
            content: '🌦️';
       }
-      
+    
       h2 {
         text-align: left;
         border: 1px solid black;
@@ -39,10 +39,10 @@
       }
       footer {
         background-color: var(--header-bg-color);
-        color: var(--header-text-color);
+        color: white;
         text-align: center;
         padding: 10px;
-        margin-top: -15px;
+        margin-top: -5px;
     }
 
 }
