@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header styling */
+header {
+    background-color: purple;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    position: relative;
+}
+
+/* harmburger styling */
+#harmburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+#harmburger:hover {
+    cursor: pointer;
+}
+
+/* navigation menu */
+#navigation {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    /* background-color: #333; */
+}
+
+#navigation li {
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem;
+    /* border: 1px solid white; */
+}
+
+#navigation a {
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid white; */
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+nav li:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+
+/* show navigation with js */
+
+#navigation.show {
+    display: flex;
+    flex-direction: column;
+}
+
+/* temple-card */
+
+.temple-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    border-radius: 8px;
+}
+
+.temple-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.temple-card p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+}
+
+.temple-card p::before {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b0082;
+}
+
+.temple-card p:nth-child(2)::before {
+    content: "Location: ";
+}
+
+.temple-card p:nth-child(3)::before {
+    content: "Dedicated: ";
+}
+
+.temple-card p:nth-child(4)::before {
+    content: "Size: ";
+}
+
+.temple-card img {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
