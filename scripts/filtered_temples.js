@@ -1,4 +1,4 @@
- // Toggle hamburger menu
+// Toggle hamburger menu
 const hamburger = document.getElementById("harmburger");
 const navigation = document.getElementById("navigation");
 
@@ -78,6 +78,11 @@ const temples = [
     }
 ];
 
+// Function to update heading
+function updateHeading(text) {
+    document.querySelector("main h2").textContent = text;
+}
+
 // Function to create and display cards
 function displayTemples(templesArray) {
     const container = document.querySelector('.grid');
@@ -115,20 +120,25 @@ function displayTemples(templesArray) {
 }
 
 // Filter functions
+function filterHome() {
+    updateHeading("Home");
+    displayTemples(temples);
+}
 function filterOld() {
+    updateHeading("Old Temples");
     displayTemples(temples.filter(t => parseInt(t.dedicated.split(',')[0]) < 1900));
 }
 function filterNew() {
+    updateHeading("New Temples");
     displayTemples(temples.filter(t => parseInt(t.dedicated.split(',')[0]) > 2000));
 }
 function filterLarge() {
+    updateHeading("Large Temples");
     displayTemples(temples.filter(t => t.area > 90000));
 }
 function filterSmall() {
+    updateHeading("Small Temples");
     displayTemples(temples.filter(t => t.area < 10000));
-}
-function filterHome() {
-    displayTemples(temples);
 }
 
 // Event listeners for nav menu
@@ -139,5 +149,4 @@ document.getElementById("large").addEventListener("click", e => { e.preventDefau
 document.getElementById("small").addEventListener("click", e => { e.preventDefault(); filterSmall(); });
 
 // Initial display
-displayTemples(temples);
-
+filterHome();

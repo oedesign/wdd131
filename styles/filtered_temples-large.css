@@ -53,6 +53,7 @@ footer {
     text-align: center;
     color: #f4f4f4;
     padding: 10px;
+
 }
 
 #lastmodified {
@@ -80,6 +81,10 @@ footer {
     /* hamburger styling */
     #harmburger {
         display: none;
+    }
+
+    footer {
+        margin-top: 40px;
     }
 
 }
