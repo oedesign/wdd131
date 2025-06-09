@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Inter", sans-serif;;
+    font-family: "Inter", sans-serif;
+    width: 860px;
+    margin:20px auto;
+    /* border: 1px solid #ccc; */
+    background-color: var(--background_colors--color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--headings--color);
+}
+
+:root {
+  --headings--color: #2E1435;
+  --paragraphs--color: #EAE8E7;
+  --paragraphs1--color: #C7C5C4;
+  --background_colors--color: #F9F9F9;
+  --background_colors1--color: #1F0D26;
+  --accents--color: #0DCCCA;
 }
