@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #004a8f;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+fieldset {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+legend {
+  font-weight: bold;
+  color: #004a8f;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: #004a8f;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #00376b;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+

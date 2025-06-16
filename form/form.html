@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Review</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Review Form</title>
+  <meta name="description" content="Submit your product review, rate features, and share your experience with our Product Review Form." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-    <form action="review.html" method="get" class="review-form">
-        <h2>Product Review</h2>
+  <main>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html">
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
 
-        <label for="productName">Product Name</label>
-        <select id="productName" name="productName" required>
-            <option value="" disabled selected>Select a Product ...</option>
-        </select>
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <label><input type="radio" id="rating1" name="rating" value="1" required /> 1 ☆</label>
+        <label><input type="radio" id="rating2" name="rating" value="2" /> 2 ☆☆</label>
+        <label><input type="radio" id="rating3" name="rating" value="3" /> 3 ☆☆☆</label>
+        <label><input type="radio" id="rating4" name="rating" value="4" /> 4 ☆☆☆☆</label>
+        <label><input type="radio" id="rating5" name="rating" value="5" /> 5 ☆☆☆☆☆</label>
+      </fieldset>
 
-        <fieldset class="rating">
-            <legend>Overall Rating</legend>
-            <label><input type="radio" name="rating" value="1" required /> ★</label>
-            <label><input type="radio" name="rating" value="2" /> ★★</label>
-            <label><input type="radio" name="rating" value="3" /> ★★★</label>
-            <label><input type="radio" name="rating" value="4" /> ★★★★</label>
-            <label><input type="radio" name="rating" value="5" /> ★★★★★</label>
-        </fieldset>
+      <label for="install-date">Date of Installation:</label>
+      <input type="date" id="install-date" name="install-date" required />
 
-        <label for="installDate">Date of Installation</label>
-        <input type="date" id="installDate" name="installDate" required />
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="fast-charging" /> Fast Charging</label>
+        <label><input type="checkbox" id="feature2" name="features" value="durable" /> Durable</label>
+        <label><input type="checkbox" id="feature3" name="features" value="eco-friendly" /> Eco-Friendly</label>
+        <label><input type="checkbox" id="feature4" name="features" value="compact" /> Compact Design</label>
+        <label><input type="checkbox" id="feature5" name="features" value="multi-use" /> Multi-use Functionality</label>
+      </fieldset>
 
-        <fieldset class="features">
-            <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
-            <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
-            <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
-            <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
-            <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
-        </fieldset>
+      <label for="review">Written Review (optional):</label>
+      <textarea id="review" name="review" rows="4" placeholder="Write your experience here..."></textarea>
 
-        <label for="review">Written Review <small>(Optional)</small></label>
-        <textarea id="review" name="review" rows="4"></textarea>
+      <label for="username">Your Name (optional):</label>
+      <input type="text" id="username" name="username" />
 
-        <label for="userName">Your Name <small>(Optional)</small></label>
-        <input type="text" id="userName" name="userName" />
-
-        <input type="submit" value="Post Review" />
+      <input type="submit" value="Submit Review" />
     </form>
+  </main>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> Oluwaseyi Elujoba | OE Design | Lagos, Nigeria</p>
-        <p>Last Modification: <span id="lastmodified"></span></p>
-    </footer>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Oluwaseyi Elujoba | OE Design | Lagos, Nigeria</p>
+    <p>Last Modification: <span id="lastmodified"></span></p>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
-
 </html>
