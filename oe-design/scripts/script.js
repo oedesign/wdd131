@@ -27,7 +27,7 @@ if (localStorage.getItem('theme') === 'dark') {
     darkStyle.removeAttribute('disabled');
 }
 
-// 📧 Contact Form Submission with Validation, Object, localStorage, and Template Literals
+// 📧 Contact Form Submission with Validation, Object, Array, localStorage, and Template Literals
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -47,8 +47,14 @@ contactForm.addEventListener('submit', (e) => {
             submittedAt: new Date().toISOString()
         };
 
-        // ✅ Store in localStorage
-        localStorage.setItem('contactData', JSON.stringify(formData));
+        // ✅ Load existing messages from localStorage (array)
+        const messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+        // ✅ Push new message to array
+        messages.push(formData);
+
+        // ✅ Save updated array back to localStorage
+        localStorage.setItem('messages', JSON.stringify(messages));
 
         // ✅ Template Literal Output
         alert(`Thanks for contacting us, ${name}! We'll get back to you soon.`);
