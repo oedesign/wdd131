@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple portfolio website for W06 project." />
+    <title>OE Design Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/dark.css" id="dark-style" disabled />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>OE Design</h1>
+            <button id="dark-toggle" aria-label="Toggle dark mode">🌓</button>
+            <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="images/main-pic.jpg" alt="Oluwaseyi Ebenezer" class="profile-pic" loading="lazy" />
+                <p>Hello! I'm Oluwaseyi Ebenezer, a passionate front-end developer with experience in HTML, CSS, and
+                    JavaScript. I love crafting responsive, accessible, and user-friendly websites.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5</div>
+                <div class="skill-card">CSS3</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Responsive Design</div>
+                <div class="skill-card">DOM Manipulation</div>
+                <div class="skill-card">Form Validation</div>
+                <div class="skill-card">localStorage</div>
+                <div class="skill-card">Git & GitHub</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm" autocomplete="on">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="name" />
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required autocomplete="off"></textarea>
+        
+                <label><input type="checkbox" name="subscribe" /> Subscribe to newsletter</label>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 OE Design. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+
+</html>

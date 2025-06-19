@@ -1,0 +1,51 @@
+/* dark.css */
+
+body {
+    background-color: #1F0D26;
+    color: #EAE8E7;
+}
+
+header,
+footer {
+    background-color: #2E1435;
+    color: #fff;
+}
+
+nav a,
+#dark-toggle,
+#hamburger {
+    color: #0DCCCA;
+}
+
+section {
+    background-color: #2E1435;
+    color: #EAE8E7;
+    border: none;
+}
+
+.skill-card {
+    background-color: #3B2A4E;
+    color: #EAE8E7;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+input,
+textarea {
+    background-color: #3B2A4E;
+    color: #fff;
+    border: 1px solid #0DCCCA;
+}
+
+button {
+    background-color: #0DCCCA;
+    color: #1F0D26;
+}
+
+button:hover {
+    background-color: #0baaa8;
+}
+
+footer {
+    background-color: #2E1435;
+    color: #EAE8E7;
+}
